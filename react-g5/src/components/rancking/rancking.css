@@ -1,0 +1,50 @@
+.rancking-container {
+    width: 400px;
+    padding: 20px;
+    font-family: var(--primaryFont);
+    background-color: var(--negro);
+    border-radius: 5px;
+}
+
+.title-rancking {
+    color: var(--blanco);
+}
+
+.rancking-user_container {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.rancking-user_position {
+    color: var(--blanco);
+    transition: all 400ms;
+}
+
+.rancking-user_position:hover {
+    color: var(--teal);
+    transform: scale(1.3);
+}
+
+.rancking-user_image {
+    width: 40px;
+    border: solid 2px var(--teal);
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.rancking-user_name {
+    color: var(--blanco);
+    margin-left: 10px;
+}
+
+.rancking-user_sale {
+    color: var(--blanco);
+    margin-left: 30px;
+    transition: all 400ms;
+}
+
+.rancking-user_sale:hover {
+    color: var(--teal);
+    transform: scale(1.3);
+}

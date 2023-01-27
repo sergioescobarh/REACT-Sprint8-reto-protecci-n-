@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primaryFont: 'helvetica';
+  --lgMobile: 1.2rem;
+  --mdMobile: 1rem;
+  --smMobile: 0.9rem;
+  --ssmMobile: 0.8rem;
+  --negro: #000000;
+  --blanco: #fff;
+  --gris: #d9d9d6;
+  --teal: #008080;
+  --tealOriginal: #d8fffc;
+  --tealBasics: #f9f9f9;
+}
+
+.container-form-rancking {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container-products-collection {
+  display: flex;
+  margin: 20px;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
