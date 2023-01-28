@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../products/products.css";
 function Products() {
 //   const [listProducts, setListProducts] = useState([]);
