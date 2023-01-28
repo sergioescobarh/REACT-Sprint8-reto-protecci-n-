@@ -14,10 +14,11 @@ function Products() {
       .then((data) => console.log(data.data))
       .catch((error) => console.log(error));
   };
-  setListProducts("ff");
+  
   console.log(listProducts);
   
   useEffect(() => {
+    setListProducts("ff");
     apiCall();
   }, []);
   return (
