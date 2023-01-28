@@ -1,23 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../products/products.css";
 function Products() {
-//   const [listProducts, setListProducts] = useState([]);
-//   console.log(listProducts);
-//   const apiCall = () => {
-//     fetch("https://productsapi-production-d23f.up.railway.app/products/list", {
-//       headers: {
-//         "Access-Control-Allow-Origin": true,
-//         "Content-Type": "application/json",
-//       },
-//     })
-//       .then((response) => console.log(response.json()))
-//       .then((data) => console.log(data.data))
-//       .catch((error) => console.log(error));
-//   };
-//   console.log(listProducts);
-//   useEffect(() => {
-//     apiCall();
-//   }, []);
+  const [listProducts, setListProducts] = useState([]);
+  console.log(listProducts);
+  const apiCall = () => {
+    fetch("https://productsapi-production-d23f.up.railway.app/products/list", {
+      headers: {
+        "Access-Control-Allow-Origin": true,
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => console.log(response.json()))
+      .then((data) => console.log(data.data))
+      .catch((error) => console.log(error));
+  };
+  setListProducts("ff");
+  console.log(listProducts);
+  
+  useEffect(() => {
+    apiCall();
+  }, []);
   return (
     <div className="products-container_images">
       <img
