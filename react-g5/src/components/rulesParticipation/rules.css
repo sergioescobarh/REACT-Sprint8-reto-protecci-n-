@@ -7,15 +7,17 @@
 }
 
 .rules-image {
-    width: 250px;
+    width: 600px;
 }
 
 .rules-container_description {
-    width: 400px; 
+    width: 600px; 
 }
 
 .rules-title{
     transition: all 400ms;
+    font-family: var(--primaryFont);
+    color: var(--teal);
 }
 
 .rules-title:hover {
@@ -24,4 +26,5 @@
 
 .rules-description{
     margin-top: 20px;
+    font-family: var(--primaryFont);
 }
