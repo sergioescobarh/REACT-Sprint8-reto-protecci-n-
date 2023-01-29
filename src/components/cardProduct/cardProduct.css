@@ -1,0 +1,21 @@
+.products-container_images {
+    width: 350px;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.container_name-discount{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+text-align: center;
+
+}
+.product-discount {
+text-align: center;
+
+}

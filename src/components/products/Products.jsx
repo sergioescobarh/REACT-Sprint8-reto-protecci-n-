@@ -23,7 +23,7 @@ function Products() {
     apiCall();
   }, []);
   return (
-    < div className="container-products-collection">
+    < div className="container-card">
       
         {listProducts.map((product) => <CardProduct key={product.id} image={product.productImage} discount={product.discount} name={product.name}/>)}
       

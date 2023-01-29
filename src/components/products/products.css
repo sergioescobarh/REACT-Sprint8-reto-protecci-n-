@@ -1,7 +1,6 @@
-.products-container_images {
- width: 500px;
-}
-
-.product-image {
-    width: 250px;
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 720px;
+    gap: 20px;
 }

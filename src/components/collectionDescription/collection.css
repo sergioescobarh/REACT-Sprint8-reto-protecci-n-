@@ -1,8 +1,12 @@
+.collection-container {
+    width: 350px;
+    margin-top: 70px;
+}
 .collection-image {
-    width: 250px;
+    width: 100%;
 }
 
 .collection-description {
     margin-top: 10px;
-    width: 250px;
+    font-family: var(--primaryFont);
 }

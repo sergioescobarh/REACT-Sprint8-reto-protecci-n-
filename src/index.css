@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: var(--primaryFont);
 }
 
 :root{
@@ -21,7 +22,7 @@
 .container-form-rancking {
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 30px;
 }
 
@@ -29,6 +30,12 @@
   display: flex;
   margin: 20px;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 30px;
+}
+
+hr.hr  {
+  margin: 0 auto;
+  width: 90%;
+  opacity: 0.3;
 }

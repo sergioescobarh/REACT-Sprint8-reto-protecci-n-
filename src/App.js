@@ -13,10 +13,12 @@ function App() {
       <Header />
       <Banner />
       <Rules/>
+      <hr className='hr'/>
       <div className='container-products-collection'>
       <Products/>
       <Collection/>
       </div>
+      <hr className='hr'/>
       <div className='container-form-rancking'>
         <Form />
         <Rancking />
