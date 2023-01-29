@@ -3,25 +3,36 @@ import "../products/products.css";
 function Products() {
   const [listProducts, setListProducts] = useState([]);
   console.log(listProducts);
-  const apiCall = () => {
-    fetch("https://productsapi-production-d23f.up.railway.app/products/list", {
+  const apiCall = async() => {
+    await fetch("https://productsapi-production-d23f.up.railway.app/products/list", {
       headers: {
-        "Access-Control-Allow-Origin": true,
-        "Content-Type": "application/json",
-      },
+        "Access-Control-Allow-Origin": "*",
+        'Content-Type': 'application/json'
+        
+
+      }
+      
     })
-      .then((response) => console.log(response.json()))
-      .then((data) => console.log(data.data))
+      .then(response => response.json())
+       .then((data) => setListProducts(data.data))
       .catch((error) => console.log(error));
   };
   
   console.log(listProducts);
   
   useEffect(() => {
-    setListProducts("ff");
+    
     apiCall();
   }, []);
   return (
+    <>
+    {listProducts.map((product) =>(
+        <img
+        className="product-image"
+        src={`../../../assets/productsImages/${product.productImage}.png`}
+        alt=""
+      />
+))}
     <div className="products-container_images">
       <img
         className="product-image"
@@ -44,6 +55,7 @@ function Products() {
         alt=""
       />
     </div>
+    </>
   );
 }
 // class Products extends Component {
